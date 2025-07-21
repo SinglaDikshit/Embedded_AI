@@ -4,7 +4,7 @@ Sensor Used- XIAO ESP32S3 Sense
 
 The output of every sensor is Voltage, which can be later converted into the desired parameter.
 
-ADD pin diagram ##
+![sdwekdjwe](images/pindiag.jpg)
 
 We don't need all the sensors each time, we can use software like TinkerCAD to make and test a circuit.
 
