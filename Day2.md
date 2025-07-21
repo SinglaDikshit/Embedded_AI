@@ -128,7 +128,7 @@ void loop(){
 
 buttonState = digitalRead(D1);
 
-Serial.println(nuttonState);
+Serial.println(buttonState);
 
 if (bottonState == "0"){
 
@@ -146,7 +146,7 @@ digitalWrite(ledPin,LOW);
 
 else{
 
-Serial.println("erroe");
+Serial.println("error");
 
 }
 }
@@ -157,10 +157,75 @@ Serial.println("erroe");
 
 ## Functions
 
+lets see the case if tbere two LEDs
 
 
+const int switchPin = D1;
 
+const int RedledPin = D2;
 
+const int YellowledPin = D3;
+
+int buttonState = 0;
+
+void setup(){
+
+pinMode(switchPin,INPUT);
+
+pinMode(RedledPin,OUTPUT);
+
+pinMode(YellowledPin,OUTPUT);
+
+Serial.begin(9600);
+
+digitalwrite(Redledpin,LOW);   
+
+digitalwrite(Yellowledpin,LOW); 
+
+}
+
+void loop(){
+
+buttonState = digitalRead(D1);
+
+Serial.println(buttonState);
+
+if (bottonState == "0"){
+
+allOFF();
+
+}
+
+else if (buttonState == "1")
+
+{
+
+allON();
+
+}
+
+else{
+
+Serial.println("error");
+
+}
+}
+
+void allON(){
+
+digitalWrite(RedledPin,HIGH);
+
+digitalWrite(YellowledPin,HIGH);
+
+}
+
+void allOFF(){
+
+digitalWrite(RedledPin,LOW);
+
+digitalWrite(YellowledPin,LOW);
+
+}
 
 
 
