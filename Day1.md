@@ -27,6 +27,7 @@ if we dont the keep the python version uniform then we may witness errors
 used this command to add edge impulse CLI - npm install -g edge-impulse-cli
 
 default code in Arduino 
+
 `void setup(){`
 
 `.......`
@@ -42,13 +43,21 @@ default code in Arduino
 Sample project - Blinking LED
 
 void setup(){
+
 pinMode(LED_BUITIN,OUTPUT);
+
 }
+
 Void loop(){
+
 digitalWrite(LED_BUITIN, HIGH);
+
 dalay(1000);
+
 digitalWrite(LED_BUILTIN, LOW);
+
 delay(1000);
+
 }
 
 
